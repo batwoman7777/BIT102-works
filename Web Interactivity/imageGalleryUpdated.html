@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Image Gallery</title>
+<meta charset="utf-8">
+<style>
+    #gallery {position: relative;}
+    figure{position: absolute;
+            left:359px;
+            text-align:center;
+            opacity:.2;}
+    #gallery span {position: absolute;
+                    left:-1000px;
+                    opacity: 0;
+                    transition:opacity 2s ease-in-out;}
+    /*left is set to -1000px so that it is hidden from view----*/
+    #gallery ul {width:300px;
+                list-style-type: none;}
+    /*list-style-type: none so that no bullet points are shown----*/
+    #gallery li {display: inline;
+                   float: left;
+                   padding:10px;}
+    #gallery a:hover span {position: absolute;
+                            top:16px;
+                            left:400px;
+                            text-align:center;
+                            opacity: 1;}
+</style>
+</head>
+<body>
+<h1>Image Gallery</h1>
+<div id="gallery">
+ <figure>
+  <img src="shirt&pant.jpg" width="400" height="700" alt="She's In Business">
+ </figure>
+ <ul>
+   <li><a href="shirt&pant.jpg"><img src="shirt&pantthumbnail.png" width="100" height="100" alt="She's In Business">
+   <span><img src="shirt&pant.jpg" width="400" height="700"
+      alt="She's in Business"><br>She's in Business</span></a>
+   </li>
+     <li><a href="shirt&jeans.jpg"><img src="shirt&jeansthumbnail.png" width="100" height="100" alt="Back In Fashion">
+    <span><img src="shirt&jeans.jpg" width="400" height="700" alt="Back In Fashion"><br>Back In Fashion</span></a>
+  </li>
+  <li><a href="bohemian.jpg"><img src="bohemianthumbnail.jpg.png" width="100" height="100" alt="Bohemian Cutie">
+    <span><img src="bohemian.jpg" width="400" height="700" alt="Bohemian Cutie"><br>Bohemian Cutie</span></a>
+  </li>
+  <li><a href="setCasual.jpg"><img src="setCasualthumbnail.png" width="100" height="100" alt="Girl O' My Dreams">
+    <span><img src="setCasual.jpg" width="400" height="700" alt="Girl O' My Dreams"><br>Girl O' My Dreams</span></a>
+  </li>
+  <li><a href="setcute.jpg"><img src="setcutethumbnail.png" width="100" height="100" alt="Vibes is Life">
+    <span><img src="setcute.jpg" width="400" height="700" alt="Vibes is Life"><br>Vibes is Life</span></a>
+  </li>
+  <li><a href="greenpants.jpg"><img src="greenpantsthumbnail.png" width="100" height="100" alt="Green is The New Black">
+    <span><img src="greenpants.jpg" width="400" height="700" alt="Green is The New Black"><br>Green is The New Black</span></a>
+  </li>
+  <li>
+    <a href="blue&white.jpg"><img src="blue&whitethumbnail.png" width="100" height="100" alt="Floral Harmony">
+    <span><img src="blue&white.jpg" width="400" height="700" alt="Floral Harmony"><br>Floral Harmony</span></a>
+  </li>
+ </ul>
+</div>
+
+</body>
+</html>

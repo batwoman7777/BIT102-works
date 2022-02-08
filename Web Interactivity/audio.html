@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" 
+         content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="" media="">
+        <style>
+            a{text-decoration: none;}
+            a:active{border: oldlace 2px solid;}
+            a:link{color:orchid;
+                   border:sienna 2px solid;
+                   background-color: sienna;}
+            a:hover{color: peru;
+                    border: powderblue 2px solid;
+                    background-color: seagreen;}
+            a:visited{color: plum;
+                      border:rebeccapurple 2px solid;
+                      background-color: rebeccapurple;}
+
+            div{width: 150px;
+                height: 100px;
+            background-color: rebeccapurple;
+            transform:translate(100px, 0px);
+            transition:width 1s linear 1ms;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+            color:aliceblue;}
+            div:hover{width: 300px;}
+            /*--shorthand property can also be used for transition ;
+           transition: -property -duration -timing-function -delay;----*/
+           .animationEx{animation-name: example;
+                        animation-duration: 2s;}
+           @keyframes example{
+               0%{background-color: red; left: 0px; top: 0px; text-align: left;}
+               25%{background-color: blue; left: 200px; top: 0px;text-align:right}
+               50%{background-color: blueviolet; left: 200px; top: 200px; text-align:center}
+               100%{background-color: chartreuse; left: 0px; top: 0px; text-align:center}
+           }
+
+           details summary{background-color: rgb(102, 210, 30);
+                           color: blueviolet;
+                           width: 300px;
+                           border: 2px solid darkgreen;
+                           font-size: 20px;
+                           font-family: Arial, Helvetica, sans-serif;}
+            </style>
+            </head>
+           
+    <body>
+
+        <!--for animation we have to use @keyframes-->
+         
+        <script src="" async defer></script>
+        <!--insert audio file-->
+        <!--controls = volume controls/play-->
+        <!--it is good practice to include more than one type of file,
+        as we don't know which type browser will support-->
+        <audio controls="controls">
+            <source src="greg.mp3" type="audio/mpeg">
+            <source src="greg.ogg" type="audio/ogg">
+            <!--in a lies fallback content-->
+            <a href = "greg.mp3">Download the file</a>
+            <transcript></transcript>
+        </audio>
+        <!--insert video file-->
+        <!--poster = gives user a clue what the video is about-->
+        <video controls="controls" poster="poster.png" height="150" width="200">
+            <source src="meme.mkv" type="video/mp4">
+            <source src="meme.ogv" type="video/ogv">
+            <a href = "meme.mkv">When you accidentally become a meme</a>
+            <caption>When you accidentally become a meme</caption>
+        </video>
+        <p>
+            <a href="meme.mkv">When you accidentally become a meme</a>
+        </p>
+        <p>
+            <br><br><br><br>
+        <div class="animationEx">
+           What in the world is sleep
+        </div></p>
+        <!--copyright issues-->
+        <!--seek permission before using anything,
+        Creative commons - CC tag  new approach to copyright
+        If not used legally, the whole website can be copyright claimed
+        Fair use clause of the copyright law-->
+
+        <!--Alternate content-->
+        <!--Transcript - audio,
+         Captions - video, 
+         Text format-->
+         <details>
+             <summary>Harry</summary>
+             <p>A musician, an actor, a model, a motherf****r</p>
+         </details>
+         <details>
+            <summary>Adreeta</summary>
+            <p>A good girl through-and-through</p>
+         </details>
+    </body>
+</html>
