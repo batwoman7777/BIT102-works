@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jobs at JavaJam</title>
+        <link rel="stylesheet" href="javajam.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <style></style>
+    </head>
+    <body id="wrapper">
+        <h1>JavaJam Coffee House</h1>
+        <nav><a href="home.html">Home</a>
+            <a href="menu.html">Menu</a> 
+            <a href="music.html">Music</a>
+            <a href="jobs.html">Jobs</a></nav>
+        <main>
+            <h2>Jobs at JavaJam</h2>
+            <p>Want to work at JavaJam? Fill out the form below to start your application.
+                <br>Required fields are marked with an asterisk (*).
+            </p>
+            <form action="http://webdevbasics.net/scripts/javajam.php" method="POST">
+            <label>*Name: </label>
+            <input type="text" name="myName" size="25" maxlength="25" required>
+            <label>*E-mail: </label>
+            <input type="email" name="myEmail" size="25" required>
+            <label>Start Date: </label>
+            <input type="date" size="25">
+            <br>
+            <label>*Experience: </label>
+            <textarea name="myExperience" rows="2" cols="25" required></textarea>
+            <input id="mySubmit" type="submit" value="Apply Now">
+            </form>
+        </main>
+    
+    </body>
+    <footer>Copyright &copy; JavaJam Coffee Bar <br>
+        <a href = "mailto: naline.shanmugam@helplive.edu.my">naline.shanmugam@helplive.edu.my</a>
+</footer>
+</html>

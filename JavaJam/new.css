@@ -1,0 +1,25 @@
+Footer {background-color: lightblue; 
+	padding: 10px; 
+	font-family: Arial; 
+	color: darkblue; 
+	border-style: dashed; 
+	border-color: darkblue; 
+	border-width: thin;} 
+
+    #notice{width: 80%; 
+        margin: auto;}
+
+    .headline{border-bottom: 2px dotted;
+               color:purple;}
+
+h1{text-shadow: 10px 10px 5px; 
+    background-color: hsla(34, 57%, 70%, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 4em;} 
+
+    #feature{font-size: small;
+              color: red;
+            font-family: Arial;
+             background-color: #ffffff;
+            width: 80%;
+            box-shadow: 10px 10px 20px black;}
